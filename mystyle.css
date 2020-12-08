@@ -22,7 +22,7 @@
 /*BODY AND HEADER*/
 body
   {
-    background: lightblue;
+    background-image: linear-gradient(#e6ffcc, #99ffff);
     color: #26734d;
     display: flex;
     justify-content: center;
@@ -48,7 +48,8 @@ h1
   top: 100px;
   width: 500px;
   font-family: OswaldLight;
-
+  padding: 20px;
+  margin: 20px;
 }
 
 #contentbox
@@ -56,10 +57,22 @@ h1
     width: 500px;
     border: 3px solid #133926;
     padding: 20px;
-    margin: 20px;
+    margin-top: 20px;
     margin-bottom: 20px;
     background: white;
   }
+
+#backgroundimage
+{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+#backgroundimage img
+{
+  width: 150px;
+}
 /*DIV BOXES*/
 
 /*LIST*/
@@ -67,6 +80,7 @@ ul
   {
     list-style-type: none;
     padding: 0px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: left;
   }
@@ -78,7 +92,7 @@ a
   position: relative;
   text-decoration: none;
   background: white;
-  padding: 20px;
+  padding: 15px;
   margin-left: auto;
   margin-bottom: 15px;
   color: gray;
@@ -92,71 +106,54 @@ a:hover
 
 a:visited
 {
-  background-color: #8cd9b3;
+  background-color: #c5e467;
   color: #26734d;
 }
 /*LINKS*/
 
 /*IMAGE SLIDER*/
-#slider
-{
-  overflow: hidden;
+#slider {
+	overflow: hidden;
+}
+#slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 20s slider infinite;
+}
+#slider figure img {
+	width: 20%;
+	float: left;
 }
 
-#slider figure
-{
-  position: relative;
-	width: 100px;
-	margin: 0px;
-	left: 0px;
-  animation: 20s slider infinite;
-}
-
-#slider figure img
-{
-  width: 20%;
-  float: left;
-}
-
-@keyframes slider
-{
-	0%
-	{
-		Left: 0;
+@keyframes slider {
+	0% {
+		left: 0;
 	}
-
-20%
-	{
-		Left: 0;
+	20% {
+		left: 0;
 	}
-25%
-	{
-		Left: -100%;
+	25% {
+		left: -100%;
 	}
-45%
-	{
-		Left: -100%;
+	45% {
+		left: -100%;
 	}
-50%
-	{
-		Left: -200%;
+	50% {
+		left: -200%;
 	}
-70%
-	{
-		Left: -200%;
+	70% {
+		left: -200%;
 	}
-
-75%
-	{
-		Left: -300%;
+	75% {
+		left: -300%;
 	}
-95%
-	{
-		Left: -300%;
+	95% {
+		left: -300%;
 	}
-100%
-	{
-		Left: -400%;
+	100% {
+		left: -400%;
 	}
 }
 
